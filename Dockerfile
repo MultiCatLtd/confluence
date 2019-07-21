@@ -1,12 +1,10 @@
 FROM blacklabelops/java:server-jre.8.162
-MAINTAINER Steffen Bleul <sbl@blacklabelops.com>
+MAINTAINER Tamás Kiss <kiss.tamas@multicat.hu>
 
 ARG CONFLUENCE_VERSION=6.13.4
 # permissions
 ARG CONTAINER_UID=1000
 ARG CONTAINER_GID=1000
-# Image Build Date By Buildsystem
-ARG BUILD_DATE=undefined
 # Language Settings
 ARG LANG_LANGUAGE=en
 ARG LANG_COUNTRY=US
@@ -91,8 +89,7 @@ LABEL com.blacklabelops.application.confluence.version=$CONFLUENCE_VERSION \
       com.blacklabelops.application.confluence.setting.country=$LANG_COUNTRY \
       com.blacklabelops.application.confluence.userid=$CONTAINER_UID \
       com.blacklabelops.application.confluence.groupid=$CONTAINER_GID \
-      com.blacklabelops.application.version.jdbc-mysql=$MYSQL_DRIVER_VERSION \
-      com.blacklabelops.image.builddate.confluence=${BUILD_DATE}
+      com.blacklabelops.application.version.jdbc-mysql=$MYSQL_DRIVER_VERSION
 
 # Expose default HTTP connector port.
 EXPOSE 8090 8091
