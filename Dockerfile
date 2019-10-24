@@ -1,7 +1,7 @@
 FROM blacklabelops/java:server-jre.8.162
 MAINTAINER Tamás Kiss <kiss.tamas@multicat.hu>
 
-ARG CONFLUENCE_VERSION=7.0.2
+ARG CONFLUENCE_VERSION=7.0.3
 # permissions
 ARG CONTAINER_UID=1000
 ARG CONTAINER_GID=1000
