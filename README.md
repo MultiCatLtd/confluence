@@ -6,7 +6,7 @@
 
 | Product |Version | Tags  | Dockerfile |
 |---------|--------|-------|------------|
-| Confluence | 7.0.3 | 7.0.3 | [Dockerfile](https://github.com/MultiCatLtd/confluence/blob/master/Dockerfile) |
+| Confluence | 7.1.0 | 7.1.0 | [Dockerfile](https://github.com/MultiCatLtd/confluence/blob/master/Dockerfile) |
 
 # Related Images
 
